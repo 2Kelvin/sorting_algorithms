@@ -26,7 +26,7 @@ void funcSwap(int *a, int *b)
 int lomutoPartition(int array[], int left, int right, size_t size)
 {
 	int m;
-	in tpivot = array[right];
+	int pivot = array[right];
 	int i = left - 1;
 
 	for (m = left; m <= right - 1; m++)
