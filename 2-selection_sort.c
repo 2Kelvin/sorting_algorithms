@@ -41,7 +41,10 @@ void selection_sort(int *array, size_t size)
 			if (array[i] < array[minIdx])
 				minIdx = i;
 		}
-		funcSwap(&array[minIdx], &array[iter]);
-		print_array(array, size);
+		if (array[iter] != array[minIdx])
+		{
+			funcSwap(&array[minIdx], &array[iter]);
+			print_array(array, size);
+		}
 	}
 }
